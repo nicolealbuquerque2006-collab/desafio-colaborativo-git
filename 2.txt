@@ -1,0 +1,52 @@
+<!-- =========================================================
+       ISSUE #1 - "Crie a seção de pizzas do cardápio"
+       Branch sugerida: feature-secao-pizzas
+       Responsável: preenche o conteúdo desta seção com as pizzas
+       do cardápio (nome, descrição, preço). Não precisa se
+       preocupar com estilo/CSS ainda.
+       ========================================================= -->
+  <section id="pizzas" class="cardapio">
+    <div class="container">
+      <h2 class="section-title">Nossas Pizzas</h2>
+      <div class="grid-cards">
+
+        <div class="card">
+          <h3>Margherita</h3>
+          <p>Molho de tomate, mussarela, tomate fresco e manjericão.</p>
+          <span class="price">R$ 39,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Calabresa</h3>
+          <p>Molho de tomate, mussarela, calabresa fatiada e cebola.</p>
+          <span class="price">R$ 42,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Portuguesa</h3>
+          <p>Presunto, ovos, cebola, pimentão, ervilha e azeitona.</p>
+          <span class="price">R$ 44,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Frango com Catupiry</h3>
+          <p>Frango desfiado, catupiry original e milho.</p>
+          <span class="price">R$ 43,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Bacon com Cheddar</h3>
+          <p>Mussarela, bacon crocante e cobertura de cheddar cremoso.</p>
+          <span class="price">R$ 49,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Vegetariana</h3>
+          <p>Abobrinha, berinjela, tomate seco, rúcula e azeitona.</p>
+          <span class="price">R$ 45,90</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== FIM DA ISSUE #1 ===================== -->
