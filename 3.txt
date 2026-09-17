@@ -1,0 +1,36 @@
+ <!-- =========================================================
+       ISSUE #2 - "Adicionar seção de combos e promoções"
+       Branch sugerida: feature-combos-promocoes
+       Responsável: preenche o conteúdo desta seção com combos
+       e promoções da pizzaria. Também sem se preocupar com CSS.
+       ========================================================= -->
+  <section id="combos" class="combos">
+    <div class="container">
+      <h2 class="section-title">Combos e Promoções</h2>
+      <div class="grid-cards">
+
+        <div class="card">
+          <h3>Combo Casal</h3>
+          <p>1 pizza grande (até 2 sabores) + 1 refrigerante 2L.</p>
+          <span class="price">R$ 54,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Combo Família</h3>
+          <p>2 pizzas grandes (até 4 sabores) + 1 refrigerante 2L.</p>
+          <span class="price">R$ 89,90</span>
+        </div>
+
+        <div class="card">
+          <h3>Terça da Pizza</h3>
+          <p>Todas as pizzas tradicionais com 20% de desconto às terças-feiras.</p>
+          <span class="price">-20%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== FIM DA ISSUE #2 ===================== -->
+
+
+ 
