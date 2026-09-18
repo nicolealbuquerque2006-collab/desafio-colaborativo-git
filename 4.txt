@@ -1,0 +1,265 @@
+<!-- =========================================================
+       ISSUE #3 - "seção de bebidas"
+       Branch sugerida: feature-secao-bebidas
+       Responsável: preenche o conteúdo desta seção com as
+       bebidas disponíveis. Também sem se preocupar com CSS.
+       ========================================================= -->
+  <section id="bebidas" class="bebidas">
+    <div class="container">
+      <h2 class="section-title">Bebidas</h2>
+      <ul class="lista-bebidas">
+        <li><span>Refrigerante Lata</span><span class="price">R$ 6,00</span></li>
+        <li><span>Refrigerante 2L</span><span class="price">R$ 12,00</span></li>
+        <li><span>Suco Natural</span><span class="price">R$ 8,00</span></li>
+        <li><span>Água Mineral</span><span class="price">R$ 4,00</span></li>
+        <li><span>Cerveja Long Neck</span><span class="price">R$ 9,00</span></li>
+      </ul>
+    </div>
+  </section>
+  <!-- ===================== FIM DA ISSUE #3 ===================== -->
+
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Pizzaria Bella Napoli. Todos os direitos reservados.</p>
+      <div class="redes-sociais">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+/* =========================================================
+   ISSUE #4 - "Estilizar visualmente o cardápio da pizzaria"
+   Branch sugerida: feature-estilizar-cardapio
+   Responsável: este arquivo inteiro. O objetivo é pegar o HTML
+   já pronto (issues #1, #2 e #3) e deixar tudo visualmente
+   bonito: cores, fontes, espaçamento, cards, grid e responsividade.
+   ========================================================= */
+
+/* ---------- Reset e base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #7a1f1f;
+}
+
+.price {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+
+/* ---------- Header / Navbar ---------- */
+.header {
+  background-color: #7a1f1f;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo-icon {
+  font-size: 1.6rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://placehold.co/1200x500?text=Pizzaria+Bella+Napoli') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+
+/* ---------- Seção de Pizzas (Issue #1) ---------- */
+.cardapio {
+  padding: 60px 0;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #7a1f1f;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+  min-height: 45px;
+}
+
+
+/* ---------- Seção de Combos e Promoções (Issue #2) ---------- */
+.combos {
+  padding: 60px 0;
+  background-color: #fdf3ec;
+}
+
+
+/* ---------- Seção de Bebidas (Issue #3) ---------- */
+.bebidas {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.lista-bebidas {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.lista-bebidas li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.lista-bebidas li:last-child {
+  border-bottom: none;
+}
+
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #2b2b2b;
+  color: #ccc;
+  padding: 25px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.redes-sociais a {
+  color: #ccc;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.redes-sociais a:hover {
+  color: #f1c40f;
+}
+
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+ 
