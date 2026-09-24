@@ -17,7 +17,40 @@
     </div>
   </section>
   <!-- ===================== FIM DA ISSUE #3 ===================== -->
-
+<!-- =========================================================
+       ISSUE #5 - "Adicionar seção de sobremesas"
+       Branch sugerida: feature-secao-sobremesas
+       Responsável: cria a seção de sobremesas, o link no menu
+       e o CSS da seção.
+       ========================================================= -->
+  <section id="sobremesas" class="sobremesas">
+    <div class="container">
+      <h2 class="section-title">Sobremesas</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <h3>Pizza de Chocolate com Morango</h3>
+          <p>Chocolate ao leite derretido com morangos frescos.</p>
+          <span class="price">R$ 45,00</span>
+        </div>
+        <div class="card">
+          <h3>Pizza Romeu e Julieta</h3>
+          <p>Goiabada cremosa com queijo muçarela derretido.</p>
+          <span class="price">R$ 42,00</span>
+        </div>
+        <div class="card">
+          <h3>Tiramisù</h3>
+          <p>Clássico italiano com café, mascarpone e cacau.</p>
+          <span class="price">R$ 20,00</span>
+        </div>
+        <div class="card">
+          <h3>Cannoli Siciliano</h3>
+          <p>Massa crocante recheada com creme de ricota e gotas de chocolate.</p>
+          <span class="price">R$ 15,00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== FIM DA ISSUE #5 ===================== -->
 
   <footer class="footer">
     <div class="container footer-content">
@@ -208,6 +241,16 @@ h1, h2, h3 {
 
 .lista-bebidas li:last-child {
   border-bottom: none;
+}
+
+/* ---------- Seção de Sobremesas (Issue #5) ---------- */
+.sobremesas {
+  padding: 60px 0;
+  background-color: #fdf3ec;
+}
+
+.sobremesas .card {
+  border-top: 4px solid #c0392b;
 }
 
 
