@@ -46,6 +46,12 @@
           <span class="price">R$ 45,90</span>
         </div>
 
+        <div class="card">
+          <h3>strogonoff</h3>
+          <p>batata palha, strogonoff.</p>
+          <span class="price">R$ 45,90</span>
+        </div>
+
       </div>
     </div>
   </section>
