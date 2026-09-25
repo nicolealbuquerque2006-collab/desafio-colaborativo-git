@@ -12,7 +12,7 @@
         <li><span>Refrigerante 2L</span><span class="price">R$ 12,00</span></li>
         <li><span>Suco Natural</span><span class="price">R$ 8,00</span></li>
         <li><span>Água Mineral</span><span class="price">R$ 4,00</span></li>
-        <li><span>Cerveja Long Neck</span><span class="price">R$ 9,00</span></li>
+        <li><span>Chá gelado</span><span class="price">R$ 7,00</span></li>
       </ul>
     </div>
   </section>
